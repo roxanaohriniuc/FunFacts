@@ -22,6 +22,7 @@ struct ColorWheel {
         UIColor(red: 85/255.0, green: 176/255.0, blue: 112/255.0, alpha: 1.0), //green color
     ]
     
+    // generate a random color method
     func randomColor() -> UIColor {
         let colorPickCount = UInt32(colorsArray.count)
         let unassignedRandomNumber = arc4random_uniform(colorPickCount)
