@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FunFacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="An interesting fact goes here " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4TS-ZV-dlm">
+                                <rect key="frame" x="159" y="217" width="225" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Ftb-vQ-CgS"/>
+                                    <constraint firstAttribute="width" constant="225" id="OUA-qb-5dY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Ftb-vQ-CgS"/>
+                                        <exclude reference="OUA-qb-5dY"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="Ftb-vQ-CgS"/>
+                                        <include reference="OUA-qb-5dY"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you know? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7AL-9s-wla">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="03y-DX-eIo"/>
+                                    <constraint firstAttribute="width" constant="116" id="cZ0-gh-2OH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="03y-DX-eIo"/>
+                                        <exclude reference="cZ0-gh-2OH"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="03y-DX-eIo"/>
+                                        <include reference="cZ0-gh-2OH"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ggd-ZW-TqQ">
+                                <rect key="frame" x="182" y="390" width="160" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="OvS-at-NVY"/>
+                                    <constraint firstAttribute="width" constant="261" id="zK1-rY-ZBQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <state key="normal" title="Show Another Fun Fact"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="OvS-at-NVY"/>
+                                        <exclude reference="zK1-rY-ZBQ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="OvS-at-NVY"/>
+                                        <include reference="zK1-rY-ZBQ"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="showFunFacts" destination="BYZ-38-t0r" eventType="touchUpInside" id="fOc-ZM-bKK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.3529411764705882" green="0.73333333333333328" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ggd-ZW-TqQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="BT1-BX-BZV"/>
+                            <constraint firstItem="7AL-9s-wla" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="41" id="Plk-gd-CJe"/>
+                            <constraint firstItem="4TS-ZV-dlm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="180" id="Qst-Ba-PuG"/>
+                            <constraint firstItem="7AL-9s-wla" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="41" id="jch-X6-8Bd"/>
+                            <constraint firstItem="4TS-ZV-dlm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="rnz-Dn-1p7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ggd-ZW-TqQ" secondAttribute="bottom" constant="91" id="vMa-eh-HE9"/>
+                            <constraint firstItem="7AL-9s-wla" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="ywa-jq-dc1"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="7AL-9s-wla"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Plk-gd-CJe"/>
+                                <exclude reference="jch-X6-8Bd"/>
+                                <exclude reference="ywa-jq-dc1"/>
+                                <exclude reference="Qst-Ba-PuG"/>
+                                <exclude reference="rnz-Dn-1p7"/>
+                                <exclude reference="BT1-BX-BZV"/>
+                                <exclude reference="vMa-eh-HE9"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="7AL-9s-wla"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Plk-gd-CJe"/>
+                                <include reference="jch-X6-8Bd"/>
+                                <include reference="ywa-jq-dc1"/>
+                                <include reference="Qst-Ba-PuG"/>
+                                <include reference="rnz-Dn-1p7"/>
+                                <include reference="BT1-BX-BZV"/>
+                                <include reference="vMa-eh-HE9"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="FunFactButton" destination="Ggd-ZW-TqQ" id="XFd-Fx-Hfz"/>
+                        <outlet property="funFactLabel" destination="4TS-ZV-dlm" id="lso-au-qQp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="341.25"/>
+        </scene>
+    </scenes>
+</document>
